@@ -35,9 +35,11 @@ def delete(request , id):
 def update(request , id):
     if request.method=="POST":
         pi=user.objects.get(pk=id)
-        fm=user(request.POST, instance=pi)
+        fm=stureg(request.POST , instance=pi)
         if fm.is_valid():
             fm.save()
+            return HttpResponseRedirect('/')
+            
     else:
         pi=user.objects.get(pk=id)
         fm=stureg(instance=pi)
