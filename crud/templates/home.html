@@ -37,7 +37,7 @@
             <td>{{st.name}}</td>
             <td>{{st.email}}</td>
             <td>{{st.password}}</td>
-            <td>
+            <td class="action">
                 <a href="{% url 'update' st.id %}">Edit</a>
                <form action="{% url 'delete' st.id %}" method="post">
                 {% csrf_token %}

@@ -1,23 +1,26 @@
 body{
     background-color: aqua;
-    width: 1110px;
     margin: 0 auto;
 }
 h1{
-    color: red;
+    color: black;
     text-align: center;
     font-size: 77px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:monospace;
+    font-style: italic;
 }
 .flex{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 form{
-width: 400px;    
+width: 200px;    
 }
 input{
     border: none;
+    padding: 10px;
+    border-radius: 12px;
 }
 form p{
     display: flex;
@@ -26,20 +29,51 @@ form p{
 input[type=submit]{
     color: white;
     background-color: black;
-    font-size: 22px;
-    padding: 10px 30px;
+    font-size: 16px;
+    font-style: italic;
+    padding: 6px 20px;
     cursor: pointer;
     border-radius: 20px;
 }
+a{
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    font-style: italic;
+    padding: 6px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-decoration: none;
+}
 table{
-    border: 1px solid red;
+    border: 1px solid black;
+    outline: none;
+
 }
 th{
     font-size: 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 td{
-    font-size: 20px;
+    font-size: 13px;
     border: 1px solid black;   
-    padding: 14px 8px;
+    /* padding: 14px 8px; */
 }
+.action{
+    display: flex;
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    form{
+      margin-bottom: 20px;
+    }
+    h1{
+        font-size: 42px;
+    }
+    .cs form{
+        margin: 0 auto;
+    }
+}
+
